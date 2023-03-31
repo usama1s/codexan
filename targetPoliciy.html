@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/typography.css" />
+    <title>HomePage</title>
+  </head>
+  <body>
+    <nav class="shadow p-20 bg-white">
+      <div class="d-flex align-items-center justify-content-between">
+        <img class="w-200" src="./assests/img/header/logo.png" alt="Logo" />
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center" style="cursor: pointer">
+            <img src="./assests/img/Header/logout.png" alt="" />
+            <p class="m-0 font-18 fontweight-500 ps-3">Logout</p>
+          </div>
+          <div class="d-flex align-items-center ps-4" style="cursor: pointer">
+            <img src="./assests/img/Header/help.png" alt="" />
+            <p class="m-0 font-18 fontweight-500 ps-3">Help</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="pt-50 pr-20 pl-20 pb-20 bg-white position-relative"
+      id="heroFormContainer"
+      style="transition: 0.3s ease"
+    >
+      <div class="" id="heroForm">
+        <div class="row" style="gap: 20px">
+          <div class="col-md">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Portfolio Group Builder</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Adhoc Individual Portfolio Group</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Individual</label
+                  >
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Standard Reports</label
+                  >
+                  <div class="d-flex gap-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label
+                        class="form-check-label font-16 fontweight-500"
+                        for="flexRadioDefault1"
+                      >
+                        PDF
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label
+                        class="form-check-label font-16 fontweight-500"
+                        for="flexRadioDefault1"
+                      >
+                        Excel
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label font-18 fontweight-400"
+                    for="flexCheckDefault"
+                  >
+                    Include Underlying Portfolio
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3" style="gap: 20px">
+          <div class="col-md">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Date Selection From</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="01-04-2023"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Date Selection To</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="01-04-2023"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Select Report</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Please Select Report</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Selector</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>No valid groups found</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Benchmark</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>No valid groups found</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col mt-auto">
+                <button class="btn btn-primary" style="width: 145px">
+                  Run
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="position-absolute bg-white p-10"
+        style="
+          cursor: pointer;
+          border-radius: 99px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 50px;
+          z-index: 10;
+        "
+        id="toggleForm"
+        onclick="toogleFormFunction()"
+      >
+        <img
+          src="./assests/img/home/arrowup.png"
+          alt="arrowup"
+          id="toogleimg"
+        />
+      </div>
+    </section>
+
+    <section>
+      <div class="d-flex">
+        <div class="col-md-3">
+          <div class="bg-white" style="padding: 20px">
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Process</h3>
+                <img
+                  src="./assests/img/policiy/arrow down.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown"
+                />
+              </div>
+              <div style="padding: 20px" id="processdiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/editdemo.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Edit Demo
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img
+                      src="./assests/img/policiy/editholding.png"
+                      alt="image"
+                    />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Edit Holdings
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img
+                      src="./assests/img/policiy/transaction.png"
+                      alt="image"
+                    />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Edit Transactions
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/summary.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Edit Summary
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/runbatch.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Run Batch
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img
+                      src="./assests/img/policiy/multitable.png"
+                      alt="image"
+                    />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Multi-row Table
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Global Div</h3>
+                <img
+                  src="./assests/img/policiy/arrow up.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown1"
+                />
+              </div>
+              <div class="d-none" style="padding: 20px" id="globaldiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Composites</h3>
+                <img
+                  src="./assests/img/policiy/arrow up.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown2"
+                />
+              </div>
+              <div class="d-none" style="padding: 20px" id="compositesdiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Benchmark</h3>
+                <img
+                  src="./assests/img/policiy/arrow down.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown3"
+                />
+              </div>
+              <div style="padding: 20px" id="benchmarkdiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/manage.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Manage
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/returns.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Edit Returns
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img
+                      src="./assests/img/policiy/dailyreturns.png"
+                      alt="image"
+                    />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Edit Daily Returns
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img
+                      src="./assests/img/policiy/packaging.png"
+                      alt="image"
+                    />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Packaging
+                    </p>
+                  </li>
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img
+                      src="./assests/img/policiy/targetpolicy.png"
+                      alt="image"
+                    />
+                    <p
+                      class="m-0"
+                      style="font-size: 16px; font-weight: 500"
+                      style="color: #3295ff"
+                    >
+                      Target Policy
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Datamap</h3>
+                <img
+                  src="./assests/img/policiy/arrow up.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown4"
+                />
+              </div>
+              <div class="d-none" style="padding: 20px" id="datamapdiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>User Toolbox</h3>
+                <img
+                  src="./assests/img/policiy/arrow up.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown5"
+                />
+              </div>
+              <div class="d-none" style="padding: 20px" id="userdiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Others</h3>
+                <img
+                  src="./assests/img/policiy/arrow up.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown6"
+                />
+              </div>
+              <div class="d-none" style="padding: 20px" id="otherdiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Customs</h3>
+                <img
+                  src="./assests/img/policiy/arrow up.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown7"
+                />
+              </div>
+              <div class="d-none" style="padding: 20px" id="customdiv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex gap-2 justify-content-between align-items-center"
+                style="padding: 15px 0"
+              >
+                <h3>Ace</h3>
+                <img
+                  src="./assests/img/policiy/arrow up.png"
+                  alt="arrrowdown"
+                  style="width: 20px; height: 20px; cursor: pointer"
+                  id="dropdown8"
+                />
+              </div>
+              <div class="d-none" style="padding: 20px" id="acediv">
+                <ul style="padding: 0; margin: 0">
+                  <li
+                    class="d-flex gap-4 align-items-center justify-content-start"
+                    style="padding-bottom: 20px; cursor: pointer"
+                  >
+                    <img src="./assests/img/policiy/audit.png" alt="image" />
+                    <p class="m-0" style="font-size: 16px; font-weight: 500">
+                      Audit Review
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">Farooq</div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assests/js/policiy.js"></script>
+    <script src="./assests/js/index.js"></script>
+  </body>
+</html>

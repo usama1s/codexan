@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/typography.css" />
+    <title>HomePage</title>
+  </head>
+  <body>
+    <nav class="shadow p-20 bg-white">
+      <div class="d-flex align-items-center justify-content-between">
+        <img class="w-200" src="./assests/img/header/logo.png" alt="Logo" />
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center" style="cursor: pointer">
+            <img src="./assests/img/Header/logout.png" alt="" />
+            <p class="m-0 font-18 fontweight-500 ps-3">Logout</p>
+          </div>
+          <div class="d-flex align-items-center ps-4" style="cursor: pointer">
+            <img src="./assests/img/Header/help.png" alt="" />
+            <p class="m-0 font-18 fontweight-500 ps-3">Help</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="pt-50 pr-20 pl-20 pb-20 bg-white position-relative"
+      id="heroFormContainer"
+      style="transition: 0.3s ease"
+    >
+      <div class="" id="heroForm">
+        <div class="row" style="gap: 20px">
+          <div class="col-md">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Portfolio Group Builder</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Adhoc Individual Portfolio Group</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Individual</label
+                  >
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Standard Reports</label
+                  >
+                  <div class="d-flex gap-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label
+                        class="form-check-label font-16 fontweight-500"
+                        for="flexRadioDefault1"
+                      >
+                        PDF
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                      />
+                      <label
+                        class="form-check-label font-16 fontweight-500"
+                        for="flexRadioDefault1"
+                      >
+                        Excel
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-auto">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label font-18 fontweight-400"
+                    for="flexCheckDefault"
+                  >
+                    Include Underlying Portfolio
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3" style="gap: 20px">
+          <div class="col-md">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Date Selection From</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="01-04-2023"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Date Selection To</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="01-04-2023"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Select Report</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Please Select Report</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="row" style="gap: 20px">
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Selector</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>No valid groups found</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label class="pb-12 fontweight-500 font-18" for="select"
+                    >Benchmark</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>No valid groups found</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col mt-auto">
+                <button class="btn btn-primary" style="width: 145px">
+                  Run
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="position-absolute bg-white p-10"
+        style="
+          cursor: pointer;
+          border-radius: 99px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 50px;
+          z-index: 10;
+        "
+        id="toggleForm"
+        onclick="toogleFormFunction()"
+      >
+        <img
+          src="./assests/img/home/arrowup.png"
+          alt="arrowup"
+          id="toggleimg"
+        />
+      </div>
+    </section>
+
+    <section class="pr-20 pl-20 pb-40 pt-50">
+      <div class="d-flex bg-white" style="max-width: 630px; border-radius: 8px">
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Search"
+          style="outline: none; border: none"
+        />
+        <div class="bg-primary p-10" style="border-radius: 8px">
+          <img src="./assests/img/home/prime_search.png" alt=" search" />
+        </div>
+      </div>
+    </section>
+
+    <section class="pr-20 pl-20">
+      <ul id="sortable" class="list-group">
+        <li
+          class="list-group-item mb-20 p-20"
+          style="color: black; border-radius: 14px"
+        >
+          <h3 style="font-weight: 600; line-height: 32px">Process</h3>
+          <div class="d-flex gap-4">
+            <div
+              class="box"
+              style="
+                border: 1px dashed #3295ff;
+                border-radius: 10px;
+                width: 200px;
+                max-height: 138px;
+                position: relative;
+              "
+            >
+              <div
+                class="pb-1"
+                style="
+                  position: absolute;
+                  right: 15px;
+                  cursor: pointer;
+                  padding: 15px;
+                "
+                id="box-pin"
+              >
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div
+                class="text-center"
+                style="padding-bottom: 15px; padding-top: 30px"
+              >
+                <img src="./assests/img/home/audit.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center"
+                style="font-size: 18px; font-weight: 600; padding-bottom: 15px"
+              >
+                Audit Review
+              </p>
+              <div
+                class="position-absolute bottom-0"
+                style="
+                  background: #3295ff;
+                  width: 200px;
+                  height: 8px;
+                  border-radius: 10px;
+                  display: none;
+                "
+                id="boxactive"
+              ></div>
+            </div>
+
+            <div
+              class="box"
+              style="
+                border: 1px dashed #3295ff;
+                border-radius: 10px;
+                width: 200px;
+                max-height: 138px;
+                position: relative;
+              "
+            >
+              <div
+                class="pb-1"
+                style="
+                  position: absolute;
+                  right: 15px;
+                  cursor: pointer;
+                  padding: 15px;
+                "
+                id="box-pin"
+              >
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div
+                class="text-center"
+                style="padding-bottom: 15px; padding-top: 30px"
+              >
+                <img src="./assests/img/home/edite.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center"
+                style="font-size: 18px; font-weight: 600; padding-bottom: 15px"
+              >
+                Edit Demo
+              </p>
+              <div
+                class="position-absolute bottom-0"
+                style="
+                  background: #3295ff;
+                  width: 200px;
+                  height: 8px;
+                  border-radius: 10px;
+                  display: none;
+                "
+                id="boxactive"
+              ></div>
+            </div>
+
+            <div
+              class="box"
+              style="
+                border: 1px dashed #3295ff;
+                border-radius: 10px;
+                width: 200px;
+                max-height: 138px;
+                position: relative;
+              "
+            >
+              <div
+                class="pb-1"
+                style="
+                  position: absolute;
+                  right: 15px;
+                  cursor: pointer;
+                  padding: 15px;
+                "
+                id="box-pin"
+              >
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div
+                class="text-center"
+                style="padding-bottom: 15px; padding-top: 30px"
+              >
+                <img src="./assests/img/home/holding.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center"
+                style="font-size: 18px; font-weight: 600; padding-bottom: 15px"
+              >
+                Edit Holdings
+              </p>
+              <div
+                class="position-absolute bottom-0"
+                style="
+                  background: #3295ff;
+                  width: 200px;
+                  height: 8px;
+                  border-radius: 10px;
+                  display: none;
+                "
+                id="boxactive"
+              ></div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
+          Item 2
+        </li>
+        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
+          Item 3
+        </li>
+        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
+          Item 4
+        </li>
+        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
+          Item 5
+        </li>
+        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
+          Item 6
+        </li>
+        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
+          Item 7
+        </li>
+      </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assests/js/index.js"></script>
+  </body>
+</html>

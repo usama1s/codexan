@@ -1,0 +1,94 @@
+/* Spacing */
+
+.p-10 {
+  padding: 10px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pr-12 {
+  padding-right: 12px;
+}
+
+.pl-12 {
+  padding-left: 12px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.w-250px {
+  width: 250px;
+}
+
+/* Font Size and Font Weight */
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.fontweight-400 {
+  font-weight: 400;
+}
+
+.fontweight-500 {
+  font-weight: 500;
+}
+
+.fontweight-600 {
+  font-weight: 600;
+}
+
+/* UI Elements */
+
+.shadow {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.14) !important;
+}
+
+/* Colors */
+.bg-form {
+  background: #f3f3f3;
+}

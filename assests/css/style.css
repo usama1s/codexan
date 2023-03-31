@@ -1,0 +1,39 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #dadada;
+  scroll-behavior: smooth;
+  min-width: 400px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.hide {
+  opacity: 0;
+  height: 0;
+}
+
+.show {
+  display: none;
+}
+
+input::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.animation {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 676px) {
+  nav .w-200 {
+    width: 100px;
+  }
+}
