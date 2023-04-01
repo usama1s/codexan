@@ -25,34 +25,40 @@
     <title>HomePage</title>
   </head>
   <body>
-    <nav class="shadow p-20 bg-white">
+    <nav class="shadow p-20 bg-white position-relative" style="z-index: 5">
       <div class="d-flex align-items-center justify-content-between">
-        <img class="w-200" src="./assests/img/header/logo.png" alt="Logo" />
+        <img
+          class="w-200 cursor-pointer"
+          src="./assests/img/header/logo.png"
+          alt="Logo"
+        />
         <div class="d-flex align-items-center justify-content-between">
-          <div class="d-flex align-items-center" style="cursor: pointer">
+          <div class="d-flex align-items-center cursor-pointer">
             <img src="./assests/img/Header/logout.png" alt="" />
-            <p class="m-0 font-18 fontweight-500 ps-3">Logout</p>
+            <p class="m-0 ps-3 font-18 fontweight-500">Logout</p>
           </div>
-          <div class="d-flex align-items-center ps-4" style="cursor: pointer">
+          <div class="d-flex align-items-center ps-4 cursor-pointer">
             <img src="./assests/img/Header/help.png" alt="" />
-            <p class="m-0 font-18 fontweight-500 ps-3">Help</p>
+            <p class="m-0 ps-3 font-18 fontweight-500">Help</p>
           </div>
         </div>
       </div>
     </nav>
 
     <section
-      class="pt-50 pr-20 pl-20 pb-20 bg-white position-relative"
+      class="bg-white position-relative pt-50 pb-20 pr-20 pl-20"
       id="heroFormContainer"
       style="transition: 0.3s ease"
     >
       <div class="" id="heroForm">
-        <div class="row" style="gap: 20px">
+        <div class="row rowgap">
           <div class="col-md">
-            <div class="row" style="gap: 20px">
+            <div class="row rowgap">
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
+                    for="select"
                     >Portfolio Group Builder</label
                   >
                   <select
@@ -68,7 +74,9 @@
               </div>
               <div class="col-md">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Individual</label
                   >
                   <input class="form-control" type="text" />
@@ -77,13 +85,15 @@
             </div>
           </div>
           <div class="col">
-            <div class="row" style="gap: 20px">
-              <div class="col">
+            <div class="row">
+              <div class="col-lg-4">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Standard Reports</label
                   >
-                  <div class="d-flex gap-4">
+                  <div class="d-flex gap-30">
                     <div class="form-check">
                       <input
                         class="form-check-input"
@@ -124,7 +134,7 @@
                     id="flexCheckDefault"
                   />
                   <label
-                    class="form-check-label font-18 fontweight-400"
+                    class="form-check-label font-16 fontweight-400"
                     for="flexCheckDefault"
                   >
                     Include Underlying Portfolio
@@ -134,12 +144,14 @@
             </div>
           </div>
         </div>
-        <div class="row pt-3" style="gap: 20px">
+        <div class="row rowgap pt-3">
           <div class="col-md">
-            <div class="row" style="gap: 20px">
+            <div class="row rowgap">
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Date Selection From</label
                   >
                   <input
@@ -151,7 +163,9 @@
               </div>
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Date Selection To</label
                   >
                   <input
@@ -163,7 +177,9 @@
               </div>
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Select Report</label
                   >
                   <select
@@ -180,10 +196,12 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="row" style="gap: 20px">
+            <div class="row rowgap">
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
+                    for="select"
                     >Selector</label
                   >
                   <select
@@ -199,7 +217,9 @@
               </div>
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
+                    for="select"
                     >Benchmark</label
                   >
                   <select
@@ -214,78 +234,44 @@
                 </div>
               </div>
               <div class="col mt-auto">
-                <button class="btn btn-primary" style="width: 145px">
-                  Run
-                </button>
+                <button class="btn btn-primary w-145">Run</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="position-absolute bg-white p-10"
-        style="
-          cursor: pointer;
-          border-radius: 99px;
-          left: 0;
-          right: 0;
-          margin: 0 auto;
-          width: 50px;
-          z-index: 10;
-        "
+        class="position-absolute bg-white end-0 start-0 mx-auto p-10 w-50 cursor-pointer border-circle"
+        style="z-index: 10"
         id="toggleForm"
         onclick="toogleFormFunction()"
       >
         <img
           src="./assests/img/home/arrowup.png"
           alt="arrowup"
-          id="toggleimg"
+          id="toogleimg"
         />
       </div>
     </section>
 
-    <section class="pr-20 pl-20 pb-40 pt-50">
-      <div class="d-flex bg-white" style="max-width: 630px; border-radius: 8px">
-        <input
-          class="form-control"
-          type="text"
-          placeholder="Search"
-          style="outline: none; border: none"
-        />
-        <div class="bg-primary p-10" style="border-radius: 8px">
+    <section class="section-padding">
+      <div class="d-flex bg-white border-top-left border-bottom-left max-w-630">
+        <input class="form-control border-0" type="text" placeholder="Search" />
+        <div
+          class="btn-lightblue border-top-right border-bottom-right cursor-pointer img-padding"
+        >
           <img src="./assests/img/home/prime_search.png" alt=" search" />
         </div>
       </div>
     </section>
 
-    <section class="pr-20 pl-20">
-      <ul id="sortable" class="list-group">
-        <li
-          class="list-group-item mb-20 p-20"
-          style="color: black; border-radius: 14px"
-        >
-          <h3 style="font-weight: 600; line-height: 32px">Process</h3>
-          <div class="d-flex gap-4">
-            <div
-              class="box"
-              style="
-                border: 1px dashed #3295ff;
-                border-radius: 10px;
-                width: 200px;
-                max-height: 138px;
-                position: relative;
-              "
-            >
-              <div
-                class="pb-1"
-                style="
-                  position: absolute;
-                  right: 15px;
-                  cursor: pointer;
-                  padding: 15px;
-                "
-                id="box-pin"
-              >
+    <section class="pt-0 pb-0 pr-20 pl-20">
+      <ul id="sortable" class="list-group pb-70">
+        <li class="list-group-item p-20 mb-20 border-radius-14">
+          <h3 class="font-28 fontweight-600 line-height-32 pb-40">Process</h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
                 <img
                   src="./assests/img/home/ph_push-pin.png"
                   alt="pin"
@@ -298,51 +284,22 @@
                   id="pin_fill"
                 />
               </div>
-              <div
-                class="text-center"
-                style="padding-bottom: 15px; padding-top: 30px"
-              >
+              <div class="text-center pb-15 pt-30">
                 <img src="./assests/img/home/audit.png" alt="image" />
               </div>
               <p
-                class="m-0 text-center"
-                style="font-size: 18px; font-weight: 600; padding-bottom: 15px"
+                class="m-0 text-center cardactive font-18 fontweight-600 pb-15"
               >
                 Audit Review
               </p>
               <div
-                class="position-absolute bottom-0"
-                style="
-                  background: #3295ff;
-                  width: 200px;
-                  height: 8px;
-                  border-radius: 10px;
-                  display: none;
-                "
+                class="position-absolute bottom-0 cardactivebottom"
                 id="boxactive"
               ></div>
             </div>
 
-            <div
-              class="box"
-              style="
-                border: 1px dashed #3295ff;
-                border-radius: 10px;
-                width: 200px;
-                max-height: 138px;
-                position: relative;
-              "
-            >
-              <div
-                class="pb-1"
-                style="
-                  position: absolute;
-                  right: 15px;
-                  cursor: pointer;
-                  padding: 15px;
-                "
-                id="box-pin"
-              >
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
                 <img
                   src="./assests/img/home/ph_push-pin.png"
                   alt="pin"
@@ -355,51 +312,18 @@
                   id="pin_fill"
                 />
               </div>
-              <div
-                class="text-center"
-                style="padding-bottom: 15px; padding-top: 30px"
-              >
+              <div class="text-center pb-15 pt-30">
                 <img src="./assests/img/home/edite.png" alt="image" />
               </div>
               <p
-                class="m-0 text-center"
-                style="font-size: 18px; font-weight: 600; padding-bottom: 15px"
+                class="m-0 text-center text-lightblack text-lightblack font-18 fontweight-600 pb-15"
               >
                 Edit Demo
               </p>
-              <div
-                class="position-absolute bottom-0"
-                style="
-                  background: #3295ff;
-                  width: 200px;
-                  height: 8px;
-                  border-radius: 10px;
-                  display: none;
-                "
-                id="boxactive"
-              ></div>
             </div>
 
-            <div
-              class="box"
-              style="
-                border: 1px dashed #3295ff;
-                border-radius: 10px;
-                width: 200px;
-                max-height: 138px;
-                position: relative;
-              "
-            >
-              <div
-                class="pb-1"
-                style="
-                  position: absolute;
-                  right: 15px;
-                  cursor: pointer;
-                  padding: 15px;
-                "
-                id="box-pin"
-              >
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
                 <img
                   src="./assests/img/home/ph_push-pin.png"
                   alt="pin"
@@ -412,49 +336,1073 @@
                   id="pin_fill"
                 />
               </div>
-              <div
-                class="text-center"
-                style="padding-bottom: 15px; padding-top: 30px"
-              >
+              <div class="text-center pb-15 pt-30">
                 <img src="./assests/img/home/holding.png" alt="image" />
               </div>
               <p
-                class="m-0 text-center"
-                style="font-size: 18px; font-weight: 600; padding-bottom: 15px"
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
               >
                 Edit Holdings
               </p>
-              <div
-                class="position-absolute bottom-0"
-                style="
-                  background: #3295ff;
-                  width: 200px;
-                  height: 8px;
-                  border-radius: 10px;
-                  display: none;
-                "
-                id="boxactive"
-              ></div>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/transaction.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Edit transactions
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/summary.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Edit Summary
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/transaction.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Run Batch
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/multirow.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Multirow Table
+              </p>
             </div>
           </div>
         </li>
-        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
-          Item 2
+        <li class="list-group-item p-20 mb-20 border-radius-14">
+          <h3 class="font-28 fontweight-600 line-height-32 pb-40">
+            Global Editors
+          </h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/plusminus.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Portfolio Updates
+              </p>
+            </div>
+
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/dollar.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Global Price
+              </p>
+            </div>
+
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/transaction.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Global Accrual
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img
+                  src="./assests/img/home/audittransaction.png"
+                  alt="image"
+                />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Adjust Transactions
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/sortby.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Sector by Type
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/transaction.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Sector by Asset
+              </p>
+            </div>
+          </div>
         </li>
-        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
-          Item 3
+        <li class="list-group-item p-20 mb-20 border-radius-14">
+          <h3 class="font-28 fontweight-600 line-height-32 pb-40">
+            Composites
+          </h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/plusminus.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                New
+              </p>
+            </div>
+
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/edite.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Research
+              </p>
+            </div>
+
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/transaction.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Change
+              </p>
+            </div>
+          </div>
         </li>
-        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
-          Item 4
+        <li class="list-group-item p-20 mb-20 border-radius-14">
+          <h3 class="font-28 fontweight-600 line-height-32 pb-40">
+            Benchmarks
+          </h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/manage.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Manage
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/summary.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Edit Returns
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/stock.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Edit Daily Returns
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/package.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Packaging
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/target.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Target Policy
+              </p>
+            </div>
+          </div>
         </li>
-        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
-          Item 5
+        <li class="list-group-item p-20 mb-20 border-radius-14">
+          <h3 class="font-28 fontweight-600 line-height-32 pb-40">DataMap</h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/manage.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Manage
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/sortby.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Asset Type
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home//stock.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Directed Assets
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/stock.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Select/category
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/multirow.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Table Values Editor
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/target.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Target Policy
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/blocks.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Tax Rates
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/123.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Transaction Codes
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/box.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Tolerance Packages
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/exchange.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Exchange Rates
+              </p>
+            </div>
+          </div>
         </li>
-        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
-          Item 6
+        <li class="list-group-item p-20 mb-20 border-radius-14">
+          <h3 class="font-28 fontweight-600 line-height-32 pb-40">
+            User Toolbox
+          </h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  style="display: none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/list.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Holder Listing
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/link.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Linked Performance
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/dollarconvert.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                MWRR Performance
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/dollarconvert.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                MWRR Performance
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/dollarconvert.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                MWRR Performance
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/search.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                SICP Research
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/copy.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Copy/Extract Data
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/delete.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Delete Data
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/logout.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Lights Out
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/request.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Ad Hoc Request
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/review.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Tiered Review
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/pending.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Pending Builds
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/info.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Info Assist
+              </p>
+            </div>
+          </div>
         </li>
-        <li class="list-group-item mb-20 p-20" style="border-radius: 14px">
-          Item 7
+        <li class="list-group-item p-20 mb-20 border-radius-14">
+          <h3 class="font-28 fontweight-600 line-height-32 pb-40">Other</h3>
+          <div class="d-flex flex-wrap gap-4">
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/manage.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Basis Point fee
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/sortby.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Workstation Files
+              </p>
+            </div>
+            <div class="box box-style">
+              <div class="pb-1 box-pinstyle" id="box-pin">
+                <img
+                  src="./assests/img/home/ph_push-pin.png"
+                  alt="pin"
+                  id="pin"
+                />
+                <img
+                  src="./assests/img/home/ph_push-pin-fill.png"
+                  alt="pin"
+                  class="d-none"
+                  id="pin_fill"
+                />
+              </div>
+              <div class="text-center pb-15 pt-30">
+                <img src="./assests/img/home/stock.png" alt="image" />
+              </div>
+              <p
+                class="m-0 text-center text-lightblack font-18 fontweight-600 pb-15"
+              >
+                Firm Market Values
+              </p>
+            </div>
+          </div>
         </li>
       </ul>
     </section>

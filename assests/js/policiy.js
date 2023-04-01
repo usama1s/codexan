@@ -1,54 +1,70 @@
-const processdiv = document.getElementById("processdiv");
-const globaldiv = document.getElementById("globaldiv");
-const compositesdiv = document.getElementById("compositesdiv");
-const benchmarkdiv = document.getElementById("benchmarkdiv");
-const datamapdiv = document.getElementById("datamapdiv");
-const userdiv = document.getElementById("userdiv");
-const otherdiv = document.getElementById("otherdiv");
-const customdiv = document.getElementById("customdiv");
-const acediv = document.getElementById("acediv");
+const divIds = [
+  "processdiv",
+  "globaldiv",
+  "compositesdiv",
+  "benchmarkdiv",
+  "datamapdiv",
+  "userdiv",
+  "otherdiv",
+  "customdiv",
+  "acediv",
+];
+const dropdownIds = [
+  "dropdown",
+  "dropdown1",
+  "dropdown2",
+  "dropdown3",
+  "dropdown4",
+  "dropdown5",
+  "dropdown6",
+  "dropdown7",
+  "dropdown8",
+];
+dropdownIds.forEach((dropdownId, index) => {
+  const dropdown = document.getElementById(dropdownId);
+  const div = document.getElementById(divIds[index]);
 
-document.getElementById("dropdown").addEventListener("click", function () {
-  processdiv.classList.toggle("d-none");
-  dropdown.classList.toggle("animation");
+  dropdown.addEventListener("click", function () {
+    div.classList.toggle("d-none");
+    const clickedImg = this.querySelector("#imgrotate");
+    clickedImg.classList.toggle("animation");
+  });
 });
 
-document.getElementById("dropdown1").addEventListener("click", function () {
-  globaldiv.classList.toggle("d-none");
-  dropdown1.classList.toggle("animation");
+const firstdiv = document.getElementById("firstdiv");
+const toogleimgdiv = document.getElementById("toogleimgdiv");
+const tooglesidebarimg = document.getElementById("tooglesidebarimg");
+const overlay_div = document.getElementById("overlay_div");
+
+overlay_div.addEventListener("click", togglesidebar);
+
+function togglesidebar() {
+  firstdiv.classList.toggle("sidebar");
+  firstdiv.classList.toggle("shadow");
+  toogleimgdiv.classList.toggle("moveimg");
+  if (firstdiv.classList.contains("sidebar")) {
+    tooglesidebarimg.style.transform = "rotate(270deg)";
+    overlay_div.style.display = "block";
+  } else {
+    tooglesidebarimg.style.transform = "rotate(90deg)";
+    overlay_div.style.display = "none";
+  }
+}
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 878) {
+    firstdiv.classList.remove("sidebar");
+    firstdiv.classList.remove("shadow");
+    toogleimgdiv.classList.remove("moveimg");
+  }
 });
 
-document.getElementById("dropdown2").addEventListener("click", function () {
-  compositesdiv.classList.toggle("d-none");
-  dropdown2.classList.toggle("animation");
-});
+const dropdowns = document.querySelectorAll(".dropdown");
+const sections = document.querySelectorAll(".section");
 
-document.getElementById("dropdown3").addEventListener("click", function () {
-  benchmarkdiv.classList.toggle("d-none");
-  dropdown3.classList.toggle("animation");
-});
-
-document.getElementById("dropdown4").addEventListener("click", function () {
-  datamapdiv.classList.toggle("d-none");
-  dropdown4.classList.toggle("animation");
-});
-
-document.getElementById("dropdown5").addEventListener("click", function () {
-  userdiv.classList.toggle("d-none");
-  dropdown5.classList.toggle("animation");
-});
-
-document.getElementById("dropdown6").addEventListener("click", function () {
-  otherdiv.classList.toggle("d-none");
-  dropdown6.classList.toggle("animation");
-});
-
-document.getElementById("dropdown7").addEventListener("click", function () {
-  customdiv.classList.toggle("d-none");
-  dropdown7.classList.toggle("animation");
-});
-
-document.getElementById("dropdown8").addEventListener("click", function () {
-  acediv.classList.toggle("d-none");
-  dropdown8.classList.toggle("animation");
+dropdowns.forEach((dropdown, index) => {
+  dropdown.addEventListener("click", () => {
+    sections[index].classList.toggle("d-none");
+    dropdown.classList.toggle("animation");
+  });
 });

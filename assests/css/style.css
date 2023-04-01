@@ -1,6 +1,6 @@
 body {
   font-family: "Work Sans", sans-serif;
-  background: #dadada;
+  background: #f3f3f3;
   scroll-behavior: smooth;
   min-width: 400px;
 }
@@ -12,6 +12,10 @@ li {
 
 a {
   color: inherit;
+}
+
+.cardactive {
+  color: #3295ff;
 }
 
 .hide {
@@ -32,8 +36,110 @@ input::placeholder {
   transform: rotate(180deg);
 }
 
-@media (max-width: 676px) {
+.sidebar {
+  display: block !important;
+  position: absolute;
+  z-index: 10;
+}
+
+.moveimg {
+  left: 240px !important;
+}
+
+input[type="radio"].form-check-input:checked {
+  color: #fff;
+  border: none;
+  background-color: #072654;
+}
+
+input[type="checkbox"].form-check-input:checked {
+  color: #fff;
+  border: none;
+  background-color: #072654;
+}
+
+.box-style {
+  border: 1px dashed #3295ff;
+  border-radius: 10px;
+  width: 200px;
+  height: 138px;
+  position: relative;
+}
+
+.box-pinstyle {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.imagewidth {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.cardactivebottom {
+  background: #3295ff;
+  width: 199px;
+  height: 8px;
+  left: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#firstdiv {
+  z-index: 15;
+}
+
+.sidebarstyle {
+  cursor: pointer;
+  border-radius: 99px;
+  top: 80px;
+  left: -10px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 15;
+}
+
+.form-select {
+  min-width: 220px;
+}
+
+#overlay_div {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 12;
+  cursor: pointer;
+}
+
+@media (max-width: 878px) {
+  #firstdiv {
+    display: none;
+    width: 264px;
+  }
+  #seconddiv {
+    padding: 16px !important;
+    width: 100%;
+  }
+  #toogleimgdiv {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
   nav .w-200 {
     width: 100px;
+  }
+  #pinable_div {
+    justify-content: center !important;
   }
 }

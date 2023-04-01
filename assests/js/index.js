@@ -9,27 +9,30 @@ const toogleimg = document.getElementById("toogleimg");
 
 function toogleFormFunction() {
   heroForm.classList.toggle("hide");
-  heroFormContainer.classList.toggle("pt-50");
   toogleimg.classList.toggle("animation");
-
+  if (heroForm.classList.contains("hide")) {
+    heroFormContainer.style.padding = "0";
+  } else {
+    heroFormContainer.style.padding = "50px 20px 20px 20px";
+  }
   setTimeout(() => {
     heroForm.classList.toggle("show");
   }, 180);
 }
-const boxes = document.querySelectorAll(".box");
-let selectedBox = null;
 
-boxes.forEach((box) => {
-  box.addEventListener("click", () => {
-    if (selectedBox === box) {
-      box.style.order = "";
-      selectedBox = null;
-    } else {
-      box.style.order = -1;
-      if (selectedBox) {
-        selectedBox.style.order = "";
+const boxpins = document.querySelectorAll("#box-pin");
+const boxes = document.querySelectorAll(".box");
+
+boxpins.forEach((boxpin) => {
+  boxpin.addEventListener("click", (event) => {
+    const clickedBox = event.target.closest(".box");
+    if (clickedBox) {
+      const currentOrder = clickedBox.style.order;
+      if (currentOrder === "-1") {
+        clickedBox.style.order = "";
+      } else {
+        clickedBox.style.order = "-1";
       }
-      selectedBox = box;
     }
   });
 });

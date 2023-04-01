@@ -22,37 +22,43 @@
     />
     <link rel="stylesheet" href="./assests/css/style.css" />
     <link rel="stylesheet" href="./assests/css/typography.css" />
-    <title>HomePage</title>
+    <title>Target Policiy</title>
   </head>
   <body>
-    <nav class="shadow p-20 bg-white">
+    <nav class="shadow p-20 bg-white position-relative" style="z-index: 5">
       <div class="d-flex align-items-center justify-content-between">
-        <img class="w-200" src="./assests/img/header/logo.png" alt="Logo" />
+        <img
+          class="w-200 cursor-pointer"
+          src="./assests/img/header/logo.png"
+          alt="Logo"
+        />
         <div class="d-flex align-items-center justify-content-between">
-          <div class="d-flex align-items-center" style="cursor: pointer">
+          <div class="d-flex align-items-center cursor-pointer">
             <img src="./assests/img/Header/logout.png" alt="" />
-            <p class="m-0 font-18 fontweight-500 ps-3">Logout</p>
+            <p class="m-0 ps-3 font-18 fontweight-500">Logout</p>
           </div>
-          <div class="d-flex align-items-center ps-4" style="cursor: pointer">
+          <div class="d-flex align-items-center ps-4 cursor-pointer">
             <img src="./assests/img/Header/help.png" alt="" />
-            <p class="m-0 font-18 fontweight-500 ps-3">Help</p>
+            <p class="m-0 ps-3 font-18 fontweight-500">Help</p>
           </div>
         </div>
       </div>
     </nav>
 
     <section
-      class="pt-50 pr-20 pl-20 pb-20 bg-white position-relative"
+      class="bg-white position-relative pt-50 pb-20 pr-20 pl-20"
       id="heroFormContainer"
       style="transition: 0.3s ease"
     >
       <div class="" id="heroForm">
-        <div class="row" style="gap: 20px">
+        <div class="row rowgap">
           <div class="col-md">
-            <div class="row" style="gap: 20px">
+            <div class="row rowgap">
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
+                    for="select"
                     >Portfolio Group Builder</label
                   >
                   <select
@@ -68,7 +74,9 @@
               </div>
               <div class="col-md">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Individual</label
                   >
                   <input class="form-control" type="text" />
@@ -77,13 +85,15 @@
             </div>
           </div>
           <div class="col">
-            <div class="row" style="gap: 20px">
-              <div class="col">
+            <div class="row">
+              <div class="col-lg-4">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Standard Reports</label
                   >
-                  <div class="d-flex gap-4">
+                  <div class="d-flex gap-30">
                     <div class="form-check">
                       <input
                         class="form-check-input"
@@ -124,7 +134,7 @@
                     id="flexCheckDefault"
                   />
                   <label
-                    class="form-check-label font-18 fontweight-400"
+                    class="form-check-label font-16 fontweight-400"
                     for="flexCheckDefault"
                   >
                     Include Underlying Portfolio
@@ -134,12 +144,14 @@
             </div>
           </div>
         </div>
-        <div class="row pt-3" style="gap: 20px">
+        <div class="row rowgap pt-3">
           <div class="col-md">
-            <div class="row" style="gap: 20px">
+            <div class="row rowgap">
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Date Selection From</label
                   >
                   <input
@@ -151,7 +163,9 @@
               </div>
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Date Selection To</label
                   >
                   <input
@@ -163,7 +177,9 @@
               </div>
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    for="select"
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
                     >Select Report</label
                   >
                   <select
@@ -180,10 +196,12 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="row" style="gap: 20px">
+            <div class="row rowgap">
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
+                    for="select"
                     >Selector</label
                   >
                   <select
@@ -199,7 +217,9 @@
               </div>
               <div class="col">
                 <div>
-                  <label class="pb-12 fontweight-500 font-18" for="select"
+                  <label
+                    class="font-18 pb-12 fontweight-500 lineheight-21"
+                    for="select"
                     >Benchmark</label
                   >
                   <select
@@ -214,25 +234,15 @@
                 </div>
               </div>
               <div class="col mt-auto">
-                <button class="btn btn-primary" style="width: 145px">
-                  Run
-                </button>
+                <button class="btn btn-primary w-145">Run</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="position-absolute bg-white p-10"
-        style="
-          cursor: pointer;
-          border-radius: 99px;
-          left: 0;
-          right: 0;
-          margin: 0 auto;
-          width: 50px;
-          z-index: 10;
-        "
+        class="position-absolute bg-white end-0 start-0 mx-auto p-10 w-50 cursor-pointer border-circle"
+        style="z-index: 10"
         id="toggleForm"
         onclick="toogleFormFunction()"
       >
@@ -244,222 +254,181 @@
       </div>
     </section>
 
-    <section>
-      <div class="d-flex">
-        <div class="col-md-3">
-          <div class="bg-white" style="padding: 20px">
+    <section class="position-relative">
+      <div class="d-flex flex-wrap">
+        <div class="col-md-3" id="firstdiv">
+          <div class="bg-white p-20">
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown"
               >
                 <h3>Process</h3>
                 <img
                   src="./assests/img/policiy/arrow down.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div style="padding: 20px" id="processdiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="p-20" id="processdiv">
+                <ul class="p-0 m-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Audit Review</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/editdemo.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Edit Demo
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Edit Demo</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img
                       src="./assests/img/policiy/editholding.png"
                       alt="image"
                     />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Edit Holdings
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Edit Holdings</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img
                       src="./assests/img/policiy/transaction.png"
                       alt="image"
                     />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Edit Transactions
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Edit Transactions</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/summary.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Edit Summary
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Edit Summary</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/runbatch.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Run Batch
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Run Batch</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img
                       src="./assests/img/policiy/multitable.png"
                       alt="image"
                     />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Multi-row Table
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Multi-row Table</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown1"
               >
                 <h3>Global Div</h3>
                 <img
                   src="./assests/img/policiy/arrow up.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown1"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div class="d-none" style="padding: 20px" id="globaldiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="d-none p-20" id="globaldiv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Audit Review</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown2"
               >
                 <h3>Composites</h3>
                 <img
                   src="./assests/img/policiy/arrow up.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown2"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div class="d-none" style="padding: 20px" id="compositesdiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="d-none p-20" id="compositesdiv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Audit Review</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown3"
               >
                 <h3>Benchmark</h3>
                 <img
                   src="./assests/img/policiy/arrow down.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown3"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div style="padding: 20px" id="benchmarkdiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="p-20" id="benchmarkdiv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/manage.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Manage
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Manage</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/returns.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Edit Returns
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Edit Returns</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img
                       src="./assests/img/policiy/dailyreturns.png"
                       alt="image"
                     />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Edit Daily Returns
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Edit Daily Returns</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img
                       src="./assests/img/policiy/packaging.png"
                       alt="image"
                     />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Packaging
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Packaging</p>
                   </li>
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img
                       src="./assests/img/policiy/targetpolicy.png"
                       alt="image"
                     />
                     <p
-                      class="m-0"
-                      style="font-size: 16px; font-weight: 500"
+                      class="m-0 font-16 fontweight-500"
                       style="color: #3295ff"
                     >
                       Target Policy
@@ -470,144 +439,264 @@
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown4"
               >
                 <h3>Datamap</h3>
                 <img
                   src="./assests/img/policiy/arrow up.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown4"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div class="d-none" style="padding: 20px" id="datamapdiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="d-none p-20" id="datamapdiv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-400">Audit Review</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown5"
               >
                 <h3>User Toolbox</h3>
                 <img
                   src="./assests/img/policiy/arrow up.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown5"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div class="d-none" style="padding: 20px" id="userdiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="d-none p-20" id="userdiv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-500">Audit Review</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown6"
               >
                 <h3>Others</h3>
                 <img
                   src="./assests/img/policiy/arrow up.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown6"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div class="d-none" style="padding: 20px" id="otherdiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="d-none p-20" id="otherdiv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-500">Audit Review</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown7"
               >
                 <h3>Customs</h3>
                 <img
                   src="./assests/img/policiy/arrow up.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown7"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div class="d-none" style="padding: 20px" id="customdiv">
-                <ul style="padding: 0; margin: 0">
+              <div class="d-none p-20" id="customdiv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-500">Audit Review</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <div
-                class="d-flex gap-2 justify-content-between align-items-center"
-                style="padding: 15px 0"
+                class="d-flex gap-2 justify-content-between align-items-center pt-15 pb-15 cursor-pointer"
+                id="dropdown8"
               >
                 <h3>Ace</h3>
                 <img
                   src="./assests/img/policiy/arrow up.png"
                   alt="arrrowdown"
-                  style="width: 20px; height: 20px; cursor: pointer"
-                  id="dropdown8"
+                  class="imagewidth"
+                  id="imgrotate"
                 />
               </div>
-              <div class="d-none" style="padding: 20px" id="acediv">
-                <ul style="padding: 0; margin: 0">
+              <div class="d-none p-20" id="acediv">
+                <ul class="m-0 p-0">
                   <li
-                    class="d-flex gap-4 align-items-center justify-content-start"
-                    style="padding-bottom: 20px; cursor: pointer"
+                    class="d-flex gap-3 align-items-center justify-content-start pb-20 cursor-pointer"
                   >
                     <img src="./assests/img/policiy/audit.png" alt="image" />
-                    <p class="m-0" style="font-size: 16px; font-weight: 500">
-                      Audit Review
-                    </p>
+                    <p class="m-0 font-16 fontweight-500">Audit Review</p>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-9">Farooq</div>
+        <div class="col-md-9 p-4" id="seconddiv">
+          <div class="bg-white rounded p-4 mt-3">
+            <h3>Add New Target Policy Value</h3>
+            <div class="py-4 text-end">
+              <button class="btn btn-primary">Update Portfolio</button>
+            </div>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <h5 class="m-0">Portfolio:</h5>
+              <p class="m-0">Beverlie Bonn4fin <span>1000000001386</span></p>
+            </div>
+            <form class="pt-4">
+              <div class="mb-3 row align-items-center">
+                <div class="col-md-2">
+                  <label for="notation" class="form-label"
+                    >Edit Notation:</label
+                  >
+                </div>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="mb-3 row align-items-center">
+                <div class="col-md-2">
+                  <label for="notation" class="form-label">Sector:</label>
+                </div>
+                <div class="col-md-10">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Administrative Assest (00)</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3 row align-items-center">
+                <div class="col-md-2">
+                  <label for="notation" class="form-label">Policy:</label>
+                </div>
+                <div class="col-md-10">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3 row align-items-center">
+                  <div class="col-md-2">
+                    <label for="notation" class="form-label"
+                      >Minimum Variance:</label
+                    >
+                  </div>
+                  <div class="col-md-10">
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3 row align-items-center">
+                  <div class="col-md-2">
+                    <label for="notation" class="form-label"
+                      >Maximum Variance:</label
+                    >
+                  </div>
+                  <div class="col-md-10">
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row align-items-center">
+                <div class="col-md-2">
+                  <label for="notation" class="form-label">Benchmark:</label>
+                </div>
+                <div class="col-md-10">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>
+                      0-2 Years US Treasures Index (OMT1)
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <hr />
+            <div class="py-3">
+              <h3>Edit Current Target Policy Value</h3>
+              <div class="py-4 text-end">
+                <button class="btn btn-primary">Update Portfolio Group</button>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>id</th>
+                      <th>Sector</th>
+                      <th>Benchmark</th>
+                      <th>Policy</th>
+                      <th>Minimum Variance</th>
+                      <th>Maximum Variance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>FX</td>
+                      <td>FIXED INCOME</td>
+                      <td>Bloomberg Barclays Intern Gov/Credit (43)</td>
+                      <td>85</td>
+                      <td>0.00</td>
+                      <td>0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="position-absolute bg-white shadow d-none sidebarstyle"
+        id="toogleimgdiv"
+        onclick="togglesidebar()"
+      >
+        <img
+          src="./assests/img/home/arrowup.png"
+          alt="arrowup"
+          id="tooglesidebarimg"
+          style="transform: rotate(90deg); width: 20px"
+        />
       </div>
     </section>
+
+    <div id="overlay_div"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
