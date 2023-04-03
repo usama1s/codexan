@@ -61,8 +61,8 @@ input[type="checkbox"].form-check-input:checked {
 .box-style {
   border: 1px dashed #3295ff;
   border-radius: 10px;
-  width: 200px;
-  height: 138px;
+  width: 190px;
+  height: 125px;
   position: relative;
 }
 
@@ -80,8 +80,9 @@ input[type="checkbox"].form-check-input:checked {
 }
 
 .cardactivebottom {
+  display: none;
   background: #3295ff;
-  width: 199px;
+  width: 189px;
   height: 8px;
   left: 0;
   border-bottom-left-radius: 8px;
@@ -119,6 +120,40 @@ input[type="checkbox"].form-check-input:checked {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 12;
   cursor: pointer;
+}
+
+.box:hover {
+  border: 1px dashed #3295ff;
+  border-bottom: none;
+}
+
+.box:hover,
+#sidebarnavitem {
+  cursor: pointer;
+}
+
+.box:hover svg path,
+#sidebarnavitem:hover svg path {
+  fill: #3295ff;
+}
+
+.box:hover .cardactivebottom {
+  display: block;
+  color: #3295ff !important;
+}
+
+.box:hover p,
+#sidebarnavitem:hover p {
+  color: #3295ff !important;
+}
+
+.sidebarselected {
+  background: #3295ff !important;
+  color: #fff;
+}
+
+.sidebarselected svg path {
+  fill: #fff;
 }
 
 @media (max-width: 878px) {
