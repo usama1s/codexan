@@ -1,5 +1,7 @@
 /* Spacing */
-
+.p-0 {
+  padding: 0 !important;
+}
 .p-10 {
   padding: 10px;
 }
@@ -207,4 +209,3 @@
   background: #f5f5f5;
   border-radius: 6px;
 }
-

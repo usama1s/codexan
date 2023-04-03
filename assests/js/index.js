@@ -6,12 +6,10 @@ const heroForm = document.getElementById("heroForm");
 const heroFormContainer = document.getElementById("heroFormContainer");
 const toggleForm = document.getElementById("toggleForm");
 const toogleimg = document.getElementById("toogleimg");
-const seconddiv = document.getElementById("seconddiv");
 
 function toogleFormFunction() {
   heroForm.classList.toggle("hide");
   toogleimg.classList.toggle("animation");
-  seconddiv.classList.toggle("mt-30");
   if (heroForm.classList.contains("hide")) {
     heroFormContainer.style.padding = "0";
   } else {
@@ -21,7 +19,6 @@ function toogleFormFunction() {
     heroForm.classList.toggle("show");
   }, 180);
 }
-
 const boxpins = document.querySelectorAll("#box-pin");
 const boxes = document.querySelectorAll(".box");
 
